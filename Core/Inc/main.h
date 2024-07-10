@@ -59,8 +59,22 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define KEY_BT_Pin GPIO_PIN_13
 #define KEY_BT_GPIO_Port GPIOC
+#define J1850__Pin GPIO_PIN_0
+#define J1850__GPIO_Port GPIOB
+#define J1850_B1_Pin GPIO_PIN_1
+#define J1850_B1_GPIO_Port GPIOB
+#define LED1_Pin GPIO_PIN_10
+#define LED1_GPIO_Port GPIOB
+#define LED2_Pin GPIO_PIN_11
+#define LED2_GPIO_Port GPIOB
 #define LED_INT_Pin GPIO_PIN_6
 #define LED_INT_GPIO_Port GPIOC
+#define OUT_PWR_Pin GPIO_PIN_4
+#define OUT_PWR_GPIO_Port GPIOB
+#define J1850_IN__Pin GPIO_PIN_5
+#define J1850_IN__GPIO_Port GPIOB
+#define J1850_IN_B6_Pin GPIO_PIN_6
+#define J1850_IN_B6_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

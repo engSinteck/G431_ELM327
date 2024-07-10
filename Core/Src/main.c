@@ -18,7 +18,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
+#include "dma.h"
 #include "fdcan.h"
+#include "i2c.h"
 #include "rtc.h"
 #include "usart.h"
 #include "usb.h"
@@ -108,10 +111,14 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_FDCAN1_Init();
   MX_RTC_Init();
   MX_USART1_UART_Init();
   MX_USB_PCD_Init();
+  MX_ADC1_Init();
+  MX_I2C1_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   pointer = 0;
   HAL_UART_Receive_IT(&huart1, (uint8_t *)rx_uart, 1);
